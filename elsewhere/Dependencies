@@ -1,0 +1,142 @@
+Elsewhere - Dependencies and Libraries
+
+Repository: JMLee1231/codeboxhack Project directory: elsewhere
+
+Project Overview
+
+Elsewhere is an Expo / React Native application targeting iOS, Android,
+and web. It uses TypeScript and React. Native maps use
+react-native-maps, while the web version uses Leaflet.
+
+Runtime Dependencies
+
+@expo-google-fonts/dm-sans (^0.4.2) - Provides the DM Sans Google font
+for Expo/React Native.
+
+@expo-google-fonts/dm-serif-display (^0.4.2) - Provides the DM Serif
+Display Google font for Expo/React Native.
+
+@expo/metro-runtime (~57.0.15) - Expo integration/runtime support for
+the Metro JavaScript bundler.
+
+@expo/vector-icons (^15.0.2) - Icon library bundled for Expo
+applications.
+
+@react-native-async-storage/async-storage (2.2.0) - Persistent local
+key-value storage. - Used by the app for information that remains on the
+user’s device.
+
+@types/leaflet (^1.9.22) - TypeScript type definitions for Leaflet. -
+Listed as a runtime dependency in this project’s package.json even
+though type packages are normally development-time dependencies.
+
+expo (~57.0.20) - Core Expo framework and tooling used to run and build
+the React Native app.
+
+expo-clipboard (~57.0.1) - Expo API for reading/writing clipboard
+content. - Supports features such as copying guide text and links.
+
+expo-font (~57.0.3) - Expo font loading and management support.
+
+expo-linking (~57.0.9) - Handles URLs and links between the application
+and external resources.
+
+expo-location (~57.0.16) - Provides device geolocation/location
+permission APIs. - Used for the app’s “My location” map functionality.
+
+expo-status-bar (~57.0.1) - Controls the native device status bar from
+the Expo application.
+
+leaflet (^1.9.4) - Interactive JavaScript mapping library. - Used for
+the web version of the application’s map. - The project uses
+OpenStreetMap map tiles.
+
+react (19.2.3) - Core React UI library.
+
+react-dom (19.2.3) - React renderer for browser/DOM environments. -
+Required for the web version of the application.
+
+react-native (0.86.3) - Cross-platform native application framework used
+for iOS and Android.
+
+react-native-maps (1.27.2) - Native map component for React Native. -
+The README states that native builds use react-native-maps and Apple
+Maps on iOS.
+
+react-native-safe-area-context (~5.7.0) - Provides safe-area
+measurements/insets so UI avoids notches, status bars, home indicators,
+and other device screen boundaries.
+
+react-native-web (^0.21.2) - Implements React Native components and APIs
+for web browsers.
+
+Development Dependencies
+
+@types/node (^26.4.1) - TypeScript type definitions for Node.js APIs.
+
+@types/react (~19.2.2) - TypeScript type definitions for React.
+
+tsx (^4.23.13) - Executes TypeScript/TSX directly in Node.js. - Used by
+this project to run tests: tsx –test src/core/*.test.ts
+
+typescript (~6.0.3) - TypeScript compiler and type checker. - Used by
+the project’s typecheck script: tsc –noEmit
+
+Main Technology Stack
+
+-   TypeScript
+-   React 19
+-   React Native
+-   Expo SDK 57
+-   React Native Web
+-   Leaflet (web maps)
+-   React Native Maps (native maps)
+-   OpenStreetMap tiles
+-   AsyncStorage (local persistence)
+-   Expo Location
+-   Expo Linking
+-   Expo Clipboard
+-   Expo Google Fonts / Expo Font
+-   Expo Vector Icons
+
+Important External Services / Data Sources
+
+These are not npm dependencies, but the repository documentation
+indicates that the application relies on or integrates with them:
+
+OpenStreetMap - Supplies map tiles for the web map.
+
+Nominatim - Used as a geocoding data source.
+
+Apple Maps - Native map provider on iOS through react-native-maps.
+
+Official venue / city / Cal Poly / Visit SLO sources - Used as sources
+for activity/catalog data.
+
+Common Project Commands
+
+Install dependencies: npm install
+
+Start Expo: npm start
+
+Start web version: npm run web
+
+Start Android: npm run android
+
+Start iOS: npm run ios
+
+Run TypeScript type checking: npm run typecheck
+
+Run tests: npm test
+
+Export web build: npm run export:web
+
+Export native iOS + Android builds: npm run export:native
+
+Dependency Source
+
+Dependency names and versions above are taken from:
+elsewhere/package.json on the repository’s main branch.
+
+The functional descriptions also use information documented in:
+elsewhere/README.md
